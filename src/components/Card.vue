@@ -12,7 +12,7 @@
                       </div>
                       <div>
                           <!-- eye toggle -->
-                          <span @click="toggleVisibility()" class="material-icons text-c3">{{icon}}</span>
+                          <span @click="toggleVisibility()" class="icon material-icons text-c3">{{icon}}</span>
                       </div>
                   </div>
                   <!-- layer 2 -->
@@ -36,7 +36,7 @@
                               <div class="text-small">THRU</div>
                           </div>
                           <!-- exp date -->
-                          <div class="text-c1" style="margin-right: 10px">
+                          <div class="text-c1" style="margin-right: 20px">
                               <span>10/12</span>
                           </div>
                           <!-- cvv -->
@@ -44,9 +44,7 @@
                               <span class="text-c2">cvv</span>
                           </div>
                           <div>
-                              <span>
-                                <input disabled style="width: 3ch; margin-left: 15px; font-size: 16px" :type="visibility ? 'text' : 'password'" value="455" />
-                              </span>
+                                <input disabled style="width: 4ch; margin-left: 5px; font-size: 16px" :type="visibility ? 'text' : 'password'" value="455" />
                           </div>
                       </div>
                   </div>
@@ -127,5 +125,8 @@ input {
 }
 .text-c3 {
     color: var(--grey3);
+}
+.icon {
+    cursor: pointer;
 }
 </style>
