@@ -27,7 +27,7 @@
                   <!-- layer 3 -->
                   <div class="layer layer3">
                       <div>
-                          <span class="text-c1">Cardholder Name</span>
+                          <span class="text-c1">BAMIDELE TOLUWAP</span>
                       </div>
                       <div class="layer">
                           <!-- valid thru -->
@@ -44,7 +44,7 @@
                               <span class="text-c2">cvv</span>
                           </div>
                           <div>
-                                <input disabled style="width: 4ch; margin-left: 5px; font-size: 16px" :type="visibility ? 'text' : 'password'" value="455" />
+                                <input disabled class="cvv-pin" :type="visibility ? 'text' : 'password'" value="455" />
                           </div>
                       </div>
                   </div>
@@ -92,7 +92,7 @@ export default {
     background-color: var(--darkg) ;
     border-radius: 20px;
     width:499px; 
-    height: 305px
+    height: 305px;
 }
 .inner-c {
     padding: 30px 30px 10px 30px;
@@ -128,5 +128,10 @@ input {
 }
 .icon {
     cursor: pointer;
+}
+.cvv-pin {
+    width: 4ch;
+    font-size: 16px;
+    text-align: end;
 }
 </style>
